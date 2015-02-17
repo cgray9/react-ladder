@@ -1,0 +1,50 @@
+{
+  "name": "reflux-ladder",
+  "version": "0.0.1",
+  "description": "Reflux Ladder App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reactjs",
+    "reflux",
+    "react-router",
+    "firebase",
+    "ladder"
+  ],
+  "author": "Colin Gray",
+  "license": "ISC",
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "fastclick": "^1.0.6",
+    "firebase": "^2.2.0",
+    "react": "^0.12.2",
+    "react-router": "^0.12.0",
+    "reflux": "^0.2.5"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-concat": "^2.5.0",
+    "gulp-livereload": "^3.7.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-react": "^2.0.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-size": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^1.1.1",
+    "gulp-util": "^3.0.3",
+    "gulp-webserver": "^0.9.0",
+    "reactify": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
