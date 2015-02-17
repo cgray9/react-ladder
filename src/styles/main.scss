@@ -1,0 +1,88 @@
+$body-font: 'Source Sans Pro', Arial, sans-serif;
+
+$primaryColor: #5ECFC0;
+$errorColor: #d00;
+
+body {
+    background: white;
+    margin: 0;
+    font-family: $body-font;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}
+
+.error {
+    color: $errorColor;
+}
+
+.main-app {
+    .header {
+        height: 3em;
+        line-height: 3em;
+        background-color: $primaryColor;
+        color: #ffffff;
+        position: fixed;
+        padding: 0 1em;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .menu-title {
+            float: left;
+        }
+
+        .user-info {
+            float: right;
+            display: inline;
+            a {
+                display: inline;
+                padding: 0 1em;
+            }
+            .nav-pic {
+                height: 2em;
+                padding: 0 1em;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .modal-overlay {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.8);
+        transition: all 0.3s;
+        text-align: center;
+
+        &.modal-show {
+            opacity: 1;
+            visibility: visible;
+            .modal {
+                visibility: visible;
+            }
+        }
+
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: auto;
+            z-index: 2000;
+            visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateX(-50%) translateY(-50%);
+            background: #fff;
+        }
+    }
+}
