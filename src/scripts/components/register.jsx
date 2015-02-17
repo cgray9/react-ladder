@@ -9,9 +9,6 @@ var actions = require('../actions/actions');
 var loginStore = require('../stores/loginStore');
 var userStore = require('../stores/userStore');
 
-// components
-var Spinner = require('../components/spinner');
-
 var Register = React.createClass({
 
     mixins: [
@@ -81,7 +78,7 @@ var Register = React.createClass({
                     <label htmlFor="password">Password</label><br />
                     <input type="password" placeholder="Password" id="password" ref="password" /><br />
                     <button type="submit" className="button button-primary" ref="submit">
-                        { this.state.submitted ? <Spinner /> : 'Register' }
+                        { this.state.submitted ? 'Loading' : 'Register' }
                     </button>
                 </form>
             </div>
